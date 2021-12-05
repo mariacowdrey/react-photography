@@ -19,15 +19,15 @@ function Nav() {
   return (
     <header data-testid="header" className="flex-row px-1">
     <h2>
-      <a href="/">
+      <a data-testid="link" href="/">
         <span><FontAwesomeIcon icon={faCameraRetro} /></span> Maria Cowdrey Photography
       </a>
     </h2>
     <nav>
       <ul className="flex-row">
         <li className="mx-2">
-          <a href="#about" onClick={() => handleClick()}>
-            About me
+          <a data-testid="about" href="#about" onClick={() => handleClick()}>
+            About Me
           </a>
         </li>
         <li className={"mx-2"}>
